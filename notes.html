@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Note Taking App</h1>
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="notes">
+      <h2>Create a New Note</h2>
+      <form id="noteForm">
+        <input type="text" id="titleInput" placeholder="Title" required>
+        <textarea id="noteInput" placeholder="Note" required></textarea>
+        <button type="submit">Save Note</button>
+      </form>
+      <div id="noteList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Yahyabey. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

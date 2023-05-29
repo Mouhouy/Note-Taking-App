@@ -1,0 +1,125 @@
+/* Global variables */
+:root {
+  --primary-color: #FF292D;
+  --secondary-color: #FFB8B9;
+  --accent-color: #FF7073;
+  --highlight-color: #FFDBDC;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Index page specific styles */
+main {
+  padding: 20px;
+}
+
+.about, .creator {
+  margin-bottom: 20px;
+}
+
+/* Notes page specific styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+}
+
+.notes {
+  padding: 20px;
+}
+
+.note {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note button {
+  margin-left: 5px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropbtn {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
